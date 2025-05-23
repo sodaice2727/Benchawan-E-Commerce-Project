@@ -17,6 +17,7 @@ function App() {
         </a>
       </div>
       <h1>Version 3.0.0 Add Email Benchawan-E-Commerce(Add login Feature)(Update Cart Button)</h1>
+        <h1>ci v1</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
