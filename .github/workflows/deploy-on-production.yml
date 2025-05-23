@@ -1,18 +1,16 @@
-name: Deploy to Production on release
-
+name: Deploy to Production on Release
 
 on:
   release:
     types: [created]
-     
+
 permissions:
-  pages : write
+  pages: write
   deployments: write
   id-token: write
 
-
 jobs:
-  Deploy:
+  deploy:
     if: ${{ github.event.release.target_commitish == 'production' }}
     runs-on: ubuntu-latest
     steps:
